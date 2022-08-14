@@ -1,0 +1,61 @@
+<div class="main posts-show">
+  <div class="container">
+
+    <div class="posts-show-item">
+
+      <img src="<%= "/images/#{@post.user.image_name}" %>">
+
+      <p><%= @post.user.name %></p>
+
+      <p><%= @post.content %></p>
+
+
+      <% if Like.find_by(user_id: @current_user.id, post_id: @post.id)%>
+
+        <%= button_to("/likes/#{@post.id}/destroy", {method: :post}) do %>
+         <span class="fa fa-heart like-btn-unlike"></span>
+
+        <% end %>
+
+      <% else %>
+
+        <%= button_to("/likes/#{@post.id}/create", {method: :post}) do %>
+          <span class="fa fa-heart like-btn"></span>
+
+          <% end %>
+
+      <% end %>
+
+       <%= @likes_counter %>
+
+
+
+      <p>Id No: <%= @current_user.id %></p>
+
+      <p>Post No: <%= @post.user_id %></p>
+      
+
+
+      <div class="post-time">
+        <%= @post.created_at%>
+      </div>
+        
+
+        
+        <div class="post-menus">
+          <%= link_to("Posts", "/posts/index") %>
+
+          <%= link_to("Excellers", "/users/index")%>
+
+          <% if @post.user_id.to_i == @current_user.id  %>
+
+          <%= link_to("Edit", "/posts/#{@post.id}/edit") %>
+          <%= button_to("Delete", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+
+          <% end %>
+        </div>
+        
+    </div>
+    
+  </div>
+</div>

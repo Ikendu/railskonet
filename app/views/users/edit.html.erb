@@ -1,0 +1,32 @@
+<div class="main users-edit">
+  <div class="container">
+    <div class="form-heading">Edit Account</div>
+
+    <% @user.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+        <% end %>
+
+    <div class="form users-form">
+      <div class="form-body">
+        <%= form_tag("/users/#{@user.id}/update", {multipart: true})%>
+
+        <p>Name</p>
+        <input value="<%= @user.name %>" name="name">
+
+        <p>Image</p>
+        <input type="file" name="image">
+
+        <p>Email</p>
+        <input value="<%= @user.email %>" name="email">
+
+        <p>Password</p>
+        <input type="password" name="password" value="<% @user.password %>">
+
+        <input type="submit" value="Save">
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+
+
+<div class="main posts-index">
+  <div class="container">
+
+  	<% @posts.each do |post|%>
+
+    <div class="posts-index-item">
+      <div class="post-left">
+        <img src="<%= "/images/#{post.user.image_name}" %>">
+      </div>
+        <p><%=link_to post.user.name, "/users/#{post.user.id}" %></p>
+     
+     <%= link_to post.content, "/posts/#{post.id}" %>
+    </div>
+    
+    <% end %>
+
+  </div>
+</div>

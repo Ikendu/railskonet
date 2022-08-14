@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>slideicon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slideicon" transform="translate(1.000000, 1.000000)">
+            <g>
+                <path d="M-0.260606061,-0.45 L14.2757576,-0.45 L14.2757576,12.45 L-0.260606061,12.45 L-0.260606061,-0.45 Z" id="Rectangle-3" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.18181818,3.55589341 C5.18181818,4.04713037 4.77478318,4.44444444 4.2730728,4.44444444 C3.77067137,4.44444444 3.36363636,4.04713037 3.36363636,3.55589341 C3.36363636,3.06465645 3.77067137,2.66666667 4.2730728,2.66666667 C4.77478318,2.66666667 5.18181818,3.06465645 5.18181818,3.55589341" id="Fill-11" fill="#FFFFFF"></path>
+                <polygon id="Fill-13" stroke="#FFFFFF" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" points="8.81818182 4.44444444 6.55029777 6.73008487 5.23751525 5.77777778 3.36363636 8.88888889 4.70538853 8.88888889 8.34870309 8.88888889 11.0909091 8.88888889"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
